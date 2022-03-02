@@ -11,8 +11,6 @@ services:
     entrypoint: dockerize -wait tcp://db:3306 -timeout 120s docker-entrypoint.sh
     networks:
       - node-network
-#    volumes:
-#      - ./:/usr/src/app
     tty: true
     ports:
       - "3000:3000"
